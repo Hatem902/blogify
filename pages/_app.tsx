@@ -9,7 +9,9 @@ export default function App({ Component, pageProps }: AppProps) {
         <Component {...pageProps} />
       </SignedIn>
       <SignedOut>
-        <SignIn />
+        <div className='flex w-full h-full justify-center items-center pt-28'>
+          <SignIn />
+        </div>
       </SignedOut>
     </ClerkProvider>
   );
