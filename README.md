@@ -12,3 +12,10 @@ Created essentially to master DevOps and Security.
 - Monitor active devices
 - Remotely Sign in and sign out active devices
 - Multi-factor authentication
+- Maximum session Life-time : 1 month.
+- Continuous Deployment process with Vercel.
+- SupaBase DB management
+
+## Issues :
+
+- Gmail : The most common issue with Clerk's verification emails is that they are "delayed" for roughly 4 minutes. This only happens with email addresses that are part of Google Workspace due to their "pre-delivery message scanning." To further debug email issues with Gmail, you should sign up for Gmail's postmaster tools.
