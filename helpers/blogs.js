@@ -2,22 +2,26 @@ import { db } from '../lib/db';
 
 export const getblogs = async ({ userId, token }) => {
   const supabase = await db(token);
-  const { data: blogs } = await supabase
+  const { data: blogs, error } = await supabase
     .from('blogs')
     .select('*')
-    .eq('id', userId);
+    .eq('user_id', userId);
+  if (error) {
+    console.log(error.message, error.hint, error.details);
+    return;
+  }
   return blogs;
 };
 
 export const addblog = async ({ userId, token, event }) => {
+  console.log(userId);
   const supabase = await db(token);
   const { data, error } = await supabase.from('blogs').insert({
     user_id: userId,
-    title: event.target[0].value,
-    note: event.target[1].value,
+    content: event.target[0].value,
   });
   if (error) {
-    console.log('error');
+    console.log(error.message, error.hint, error.details);
     return;
   }
   return data;
