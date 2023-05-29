@@ -54,7 +54,7 @@ export default function Home() {
             </Button>
           </form>
           <div className='flex flex-col gap-2.5'>
-            {blogs.map((blog) => (
+            {blogs?.map((blog) => (
               <div className='flex flex-col border border-slate-200 rounded-lg py-4 px-8 gap-1'>
                 <div>{blog.content}</div>
                 <Timestamp

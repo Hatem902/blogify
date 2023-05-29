@@ -6,15 +6,15 @@ Created essentially to master DevOps and Security.
 ## Features :
 
 - Auto-linking between multiple account
-- You can choose to login with phone number, with email and password credentials, with username and password, or with OAuth credentials via Google or Twitter accounts.
-- Email Verification
+- You can choose to login with email and password credentials, with username and password, or with OAuth credentials via Google or Twitter accounts.
+- Email Verification.
 - Add multiple email adresses to your account.
-- Monitor active devices
+- Monitor active devices.
 - Remotely Sign in and sign out active devices
-- Multi-factor authentication
+- Multi-factor authentication.
 - Maximum session Life-time : 1 month.
 - Continuous Deployment process with Vercel.
-- SupaBase DB management
+- SupaBase DB management.
 
 ## Issues :
 
