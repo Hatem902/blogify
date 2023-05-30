@@ -18,7 +18,7 @@ export const addblog = async ({ userId, token, event }) => {
   const supabase = await db(token);
   const { data, error } = await supabase.from('blogs').insert({
     user_id: userId,
-    content: event.target[0].value,
+    content: event.target[1].value,
   });
   if (error) {
     console.log(error.message, error.hint, error.details);

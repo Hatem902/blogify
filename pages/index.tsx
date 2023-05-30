@@ -54,8 +54,11 @@ export default function Home() {
             </Button>
           </form>
           <div className='flex flex-col gap-2.5'>
-            {blogs.map((blog) => (
-              <div className='flex flex-col border border-slate-200 rounded-lg py-4 px-8 gap-1'>
+            {blogs?.map((blog) => (
+              <div
+                className='flex flex-col border border-slate-200 rounded-lg py-4 px-8 gap-1'
+                key={blog.id}
+              >
                 <div>{blog.content}</div>
                 <Timestamp
                   className='text-slate-400 text-sm'
